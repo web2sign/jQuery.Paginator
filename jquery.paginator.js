@@ -45,7 +45,7 @@
 			var page = current_page-1;
 			var page_link = $('<a />').text('«');
 			if( page < 1 ) {
-				page_link.addClass('disabled');
+				page_nav.addClass('disabled');
 			} else {
 				page_link.data('page', page ).attr('href','#')
 				page_link.bind('click',goto);
@@ -69,7 +69,7 @@
 			var page = current_page+1;
 			var page_link = $('<a />').text("»");
 			if( page > Math.ceil( $(o).find( settings.item ).length / settings.per_page) ) {
-				page_link.addClass('disabled');
+				page_nav.addClass('disabled');
 			} else {
 				page_link.data('page', page ).attr('href','#')
 				page_link.bind('click',goto);
