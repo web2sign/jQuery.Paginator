@@ -1,2 +1,2 @@
 # jQuery.Paginator
-A basic jquery plugin to have you list of item paginated.
+A basic jquery plugin to have your list item be paginated.
